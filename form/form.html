@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <link rel="stylesheet" href="./form.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="#">
+        <label for="name"> Firstname </label> <br>
+        <input
+          type="text"
+          class="input"
+          placeholder="enter your name ..."
+          name="name"
+          
+          id="name"
+          minlength="4"
+          required
+        /> <span id="nameMessage"></span> <br>
+        <label for="surname">Surname:</label> <br>
+        <input
+          type="text"
+          class="input"
+          name="surname"
+          id="surname"
+          minlength="5"
+          placeholder="enter your surname"
+          required
+        /> <br>
+        <label for="delivery">Delivery date</label> <br>
+        <input
+          type="date"
+          class="input"
+          name="delivery"
+          id="delivery"
+          required
+        /> <br>
+        <label for="street">Street:</label> <br>
+        <input
+          type="text"
+          class="input"
+          name="street"
+          id="street"
+          required
+          minlength="5"
+        /> <br>
+        <label for="house">House number</label> <br>
+        <input type="number" class="input" id="house" name="house" min="0" /> <br>
+        <label for="number">Flat Number:</label> <br>
+        <input type="number" class="input" name="number" id="number" required />
+        <div class="payment">
+          <p>Payment Method:</p>
+          <input type="radio" id="cash" name="cash" value="cash" />
+          <label for="cash">Cash</label>
+          <input type="radio" id="card" name="cash" value="card" />
+          <label for="card">Card</label>
+        </div>
+        <div class="gift">
+          <h2>Chooce 2 gifts</h2>
+          <input type="checkbox" name="pack" id="pack" />
+          <label for="pack">pack as a gift</label> <br />
+          <input type="checkbox" name="postcard" id="postcard" />
+          <label for="postcard">add postcard</label> <br />
+          <input type="checkbox" />
+          <label for="discount">provide 2% discount to the next time</label>
+          <br />
+          <input type="checkbox" name="pen-pencil" id="pen-pencil" />
+          <label for="pen-pencil">branded pen or pencil</label>
+
+          <input type="submit" value="Send" class="submit-btn" />
+        </div>
+      </form>
+      
+    </div>
+    <script src="./form.js"></script>
+  </body>
+</html>
