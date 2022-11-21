@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+ position: relative;
+  text-align: center;
+  color: #000;
+  font-weight: 800;
+  font-size: 3rem;
+}
+.img-header {
+  width: 100%;
+  opacity: 1;
+}
+.title-book{
+  font-family: sans-serif;
+  margin-left:4rem;
+  background-color:rgb(86,86,245);
+  color: #fff;
+  width: 500px;
+  text-align: center;
+  border-radius: 1rem;
+  opacity: 0.8;
+  z-index: 1;
+}
+.title-header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 2;
+  z-index: 1.2;
+  background-color:rgb(86, 86, 245);
+  opacity: 0.8;
+  border-radius:0.7rem;
+  color: #fff;
+  padding: 5px;
+  font-family: sans-serif;
+}
+.main {
+    display: flex;
+}
+
+section {
+    display: flex;
+  justify-content: space-around;
+  width: 550px;
+  border: none;
+  margin: 3rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  transition: all 0.1s linear;
+  position: relative;
+  background-color:#fff;
+}
+section:hover {
+    transform: scale(1.03);
+}
+.book-descr {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+.show-more {
+  border: none;
+  background-color: blue;
+  color: #fff;
+  width: 100px;
+  border-radius: 3px;
+  padding: 4px;
+  cursor: pointer;
+  transition: all 0.5s linear;
+  position: absolute;
+  bottom: 3rem;
+}
+
+.show-more:active {
+  transform: scale(0.7);
+  background-color: #fff;
+  color: #000;
+}
+.add-btn {
+  border: none;
+  background-color: green;
+  color: #fff;
+  width: 100px;
+  border-radius: 3px;
+  padding: 4px;
+  cursor: pointer;
+  transition: all 0.5s linear;
+  /* margin-top: 9rem;
+  margin: 9rem 5px; */
+  position: absolute;
+  bottom: 1rem;
+}
+.add-btn:active {
+  transform: scale(0.7);
+  background-color: #fff;
+  color: #000;
+}
+.book-img{
+    width: 300px;
+    border-radius:1rem;
+    margin: 0.5rem;
+}
+.order-img {
+    width: 90px;
+    border-radius:0.3rem;
+    margin: 2px;
+}
+.main {
+    width: 100%;
+    display: flex;
+    background-color:rgb(231, 225, 225);
+    position: relative;
+}
+.order-books {
+    position: absolute;
+    right: 0;
+}
+.confirm-link {
+  text-decoration: none;
+  background-color:green;
+  color: #fff;
+  padding: 10px;
+  position: absolute;
+  top: 4rem;
+  right: 0;
+  border: none;
+  margin: 0.1rem;
+  border-radius:0.7rem;
+}
+.div__confirm {
+  position: absolute;
+  bottom: 0;
+}
+.article {
+  position:relative;
+    width: 300px;
+    display: block;
+    border: none;
+    box-shadow:5px 5px 5px rgba(0,0,0,0.5);
+    margin: 2rem;
+    padding: 0.3rem;
+    border-radius:1rem;
+    transition: all .3s linear;
+    background-color:#fff;
+    /* height: 500px; */
+    /* flex-wrap: wrap; */
+}
+.article:hover{
+  transform: scale(1.03);
+}
+.add-catalog {
+  width: 500px;
+}
+.article-descr {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+.x-btn {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.33rem;
+  border: none;
+  background-color:#fff;
+  color: blue;
+  cursor: pointer;
+  transition: all .5s linear;
+}
+.x-btn:active {
+  transform: scale(0.5);
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+ /* -----------------------------Modal Classes ----------------------------------------------*/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #fff;
+  float: right;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  background-color:red;
+  border-radius:5px;
+  padding: 5px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
